@@ -7,7 +7,7 @@ width = 500;
 height = 200;
 radius = 25;
 
-dtm = [dtm1];
+dtm = [dtm1, dtm2];
 dtmIndex = 0
 
 stateIndex = 0;
