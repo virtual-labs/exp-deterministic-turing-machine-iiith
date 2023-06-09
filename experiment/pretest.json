@@ -2,35 +2,46 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Can a multitape DTM be simulated by a single tape DTM?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "unconditionally yes",
+        "b": "no",
+        "c": "yes if alphabet set is updated"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": ""
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Can a DTM with infinite tape length on both sides be simulated by a DTM with tape length infinite only on one side?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "unconditionally yes",
+        "b": "no",
+        "c": "yes if alphabet set is updated"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Can a DTM simulate random access memory?",
+      "answers": {
+        "a": "yes without any blowup",
+        "b": "no",
+        "c": "yes with polynomial blowup"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": ""
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
