@@ -2,48 +2,54 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Can a multitape DTM be simulated by a single tape DTM?",
+      "question": "Which of the following is the primary memory structure of a Pushdown Automaton (PDA)?",
       "answers": {
-        "a": "unconditionally yes",
-        "b": "no",
-        "c": "yes if alphabet set is updated"
+        "a": "Infinite tape",
+        "b": "Finite control",
+        "c": "Queue",
+        "d": "Stack"
       },
       "explanations": {
         "a": "",
         "b": "",
-        "c": ""
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which computational device can recognize a larger class of languages?",
+      "answers": {
+        "a": "Finite Automaton",
+        "b": "Pushdown Automaton",
+        "c": "Turing Machine",
+        "d": "Both PDA and TM recognize the same class of languages"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "Can a DTM with infinite tape length on both sides be simulated by a DTM with tape length infinite only on one side?",
+      "question": "What is the primary difference between a finite automaton and a Turing machine?",
       "answers": {
-        "a": "unconditionally yes",
-        "b": "no",
-        "c": "yes if alphabet set is updated"
+        "a": "A Turing machine has multiple tapes",
+        "b": "A Turing machine has a read/write head and can modify its tape",
+        "c": "A finite automaton has an infinite tape",
+        "d": "A Turing machine cannot change states"
       },
       "explanations": {
         "a": "",
         "b": "",
-        "c": ""
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Can a DTM simulate random access memory?",
-      "answers": {
-        "a": "yes without any blowup",
-        "b": "no",
-        "c": "yes with polynomial blowup"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": ""
-      },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]

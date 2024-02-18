@@ -2,42 +2,54 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Do DTMs halt for all input?",
+      "question": "Which of the following best describes the tape of a Turing machine?",
       "answers": {
-        "a": "yes",
-        "b": "no"
+        "a": "A finite sequence of cells",
+        "b": "An infinite sequence of cells with symbols",
+        "c": "A sequence of cells with only a fixed number of symbols",
+        "d": "A tape that can't be written on"
       },
       "explanations": {
         "a": "",
-        "b": ""
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
-    },
+    },    
     {
-      "question": "Are there languages that cannot be decided by a DTM?",
+      "question": "If a non-deterministic Turing machine (NDTM) has multiple possible transitions from a given state for a specific input, it:",
       "answers": {
-        "a": "yes",
-        "b": "no"
+        "a": "Must choose the transition leading to a halt state",
+        "b": "Requires human intervention to choose the right transition",
+        "c": "Can proceed with all of them simultaneously",
+        "d": "Errors out and stops processing"
       },
       "explanations": {
         "a": "",
-        "b": ""
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "Can one TM simulate another TM?",
+      "question": "Which of the following statements is true about the languages accepted by deterministic Turing machines?",
       "answers": {
-        "a": "yes",
-        "b": "no"
+        "a": "They can only accept regular languages",
+        "b": "They can accept any language, including non-computable ones",
+        "c": "They can accept any language that is Turing-decidable",
+        "d": "They can only accept context-free languages"
       },
       "explanations": {
         "a": "",
-        "b": ""
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   ]
