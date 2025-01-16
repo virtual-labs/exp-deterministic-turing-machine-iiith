@@ -1,3 +1,8 @@
+### Pre-requisites
+1. [Language acceptance by Deterministic Finite Automata](https://virtual-labs.github.io/exp-determinstic-finite-automaton-iiith/)
+2. [Non-determininistic Finite Automata (DFA)](https://virtual-labs.github.io/exp-non-determinstic-finite-automaton-iiith/)
+3. [Pushdown Automata (PDA)](https://virtual-labs.github.io/exp-pushdown-automaton-iiith/)
+
 # Introduction
 
 For a quick recap on Pushdown Automata, think of it as a simplified version of a computer that has a single data structure known as a **stack** (so you can only read or write at the top).
@@ -14,7 +19,7 @@ Before you read on, try thinking about this: Instead of one stack, you’ve now 
 
 Turns out, this increases our computational power so much that the resulting automata are turing complete! (More on this later) : Such a system can solve all problems that our modern computers can (in theory) Why is a queue so much much more powerful?
 
-For example, When designing a Pushdown Automaton (PDA) to recognize languages like  $(a^nb^nc^n)$, you'll encounter difficulties in ensuring that the counts of $(a), (b),$ and $(c)$ are all the same. While you can create a PDA that checks if the symbol $(a)$ appears $(n)$ times by using its stack, the challenge arises from the lack of "context" between the different alphabet symbols and their respective counts. 
+For example, When designing a Pushdown Automaton (PDA) to recognize languages like  $ (a^nb^nc^n) $, you'll encounter difficulties in ensuring that the counts of $ (a), (b), $ and $ (c) $ are all the same. While you can create a PDA that checks if the symbol $ (a) $ appears $ (n) $ times by using its stack, the challenge arises from the lack of "context" between the different alphabet symbols and their respective counts. 
 
 However, if you use a queue instead (or two stacks), you will be able to solve this problem. In fact, you’ll be able to solve *any* solvable problem. More explicitly put, If you can describe a step-by-step algorithm for solving a problem, a Turing machine can simulate that algorithm and execute those steps, symbol by symbol. (This is the church turing hypothesis)
 
@@ -46,14 +51,14 @@ Turing machines are universal computational devices. They can simulate the opera
 
 A Turing machine (TM) can be formally defined as a 7-tuple $(Q, Σ, Γ, δ, q0, q_{accept}, q_{reject})$ - You may have come across similar notation in the previous chapters.
 
-1. $**Q$:** This is a finite set of states. Each state represents a unique configuration of the machine during its computation.
-2. $**Σ$:** This represents the input alphabet, which is a finite set of symbols that can appear on the input **tape**.
-3. $**Γ$:** This represents the tape alphabet, which is also a finite set of symbols. The tape alphabet includes Σ as a subset, and it may also contain additional symbols used for internal purposes.
-4. $δ$: This is the transition function, which maps the current state, the symbol read from the tape, to the next state, the symbol to be written on the tape (which can be the same as the read symbol), and the direction in which the tape head should move (left or right). In formal notation, $δ: Q × Γ → Q × Γ × {L, R}$, where $×$ represents the Cartesian product.
-4. $δ$: This is the transition function, which maps the current state, the symbol read from the tape, to the next state, the symbol to be written on the tape (which can be the same as the read symbol), and the direction in which the tape head should move (left or right). In formal notation, $δ: Q × Γ → Q × Γ × {L, R}$, where $×$ represents the Cartesian product.
-5. $**q_0$:** This is the initial state. It indicates the state in which the machine starts its computation.
-6. $**q_{accept}$:** This is the set of accepting states (or final states), which is a subset of Q. When the machine enters an accepting state, it signifies that the input has been accepted.
-7. $q_{reject}$: The reject state(s), such that $q_{accept}$ and $q_{reject}$ are mutually exclusive.
+1. $ Q $ : This is a finite set of states. Each state represents a unique configuration of the machine during its computation.
+2. $ \Sigma $ : This represents the input alphabet, which is a finite set of symbols that can appear on the input **tape**.
+3. $ \Gamma $ : This represents the tape alphabet, which is also a finite set of symbols. The tape alphabet includes Σ as a subset, and it may also contain additional symbols used for internal purposes.
+4. $ \delta $ : This is the transition function, which maps the current state, the symbol read from the tape, to the next state, the symbol to be written on the tape (which can be the same as the read symbol), and the direction in which the tape head should move (left or right). In formal notation, $δ: Q × Γ → Q × Γ × {L, R}$, where $×$ represents the Cartesian product.
+<!-- 4. $δ$: This is the transition function, which maps the current state, the symbol read from the tape, to the next state, the symbol to be written on the tape (which can be the same as the read symbol), and the direction in which the tape head should move (left or right). In formal notation, $δ: Q × Γ → Q × Γ × {L, R}$, where $×$ represents the Cartesian product. -->
+5. $ q_0 $ : This is the initial state. It indicates the state in which the machine starts its computation.
+6. $ q_{accept} $ : This is the set of accepting states (or final states), which is a subset of $ Q $. When the machine enters an accepting state, it signifies that the input has been accepted.
+7. $ q_{reject} $: The reject state(s), such that $ q_{accept} $ and $ q_{reject} $ are mutually exclusive.
 
 The read-write head isn’t explicitly part of the formal definition, however, it would necessary to perform operations on the machine, as it’s what would retrieve the contents on the tape.
 
