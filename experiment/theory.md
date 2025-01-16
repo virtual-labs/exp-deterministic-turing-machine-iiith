@@ -49,7 +49,7 @@ Turing machines are universal computational devices. They can simulate the opera
 
 ## Formal Definition
 
-A Turing machine (TM) can be formally defined as a 7-tuple $(Q, Σ, Γ, δ, q0, q_{accept}, q_{reject})$ - You may have come across similar notation in the previous chapters.
+A Turing machine (TM) can be formally defined as a 7-tuple $ (Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject}) $ - You may have come across similar notation in the previous chapters.
 
 1. $ Q $ : This is a finite set of states. Each state represents a unique configuration of the machine during its computation.
 2. $ \Sigma $ : This represents the input alphabet, which is a finite set of symbols that can appear on the input **tape**.
