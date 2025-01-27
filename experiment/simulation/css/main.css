@@ -101,13 +101,9 @@
     justify-content: space-between;
     z-index: 1;
     width: 100%;
-/*    background-color: darkred;*/
   }
 
   .toggle-control-menu {
-/*    position: fixed;*/
-    /*top: 20px;
-    left: 20px;*/
     z-index: 1;
     padding: 0.8em 1em;
     transform: scale(0.9);
@@ -123,9 +119,6 @@
   }
 
   .toggle-stack-trace-menu {
-/*    position: fixed;*/
-    /*top: 20px;
-    right: 20px;*/
     z-index: 1;
     padding: 0.8em 1em;
     transform: scale(0.9);
@@ -141,9 +134,6 @@
   }
 
   .toggle-instruction-menu {
-/*    position: fixed;*/
-    /*top: 20px;
-    right: 20px;*/
     z-index: 1;
     padding: 0.8em 1em;
     transform: scale(0.9);
@@ -173,8 +163,10 @@ th, td {
 }
 
 
-.v-button { margin-bottom: 5px; width: inherit;}
-
+.v-button {
+  margin-bottom: 5px;
+  width: 75%;
+}
 .window { z-index:20; }
 .jtk-connector { z-index:4; }
 .jtk-endpoint { z-index:5; }
@@ -423,13 +415,13 @@ text {
   position: relative;
   width: 100%;
   height: 100%;
-  /* border: 0.2rem solid black; */
+  border: 0.2rem solid black;
 }
 
 #working-area {
   position: absolute;
-  width: 95%;
-  height: 95%;
+  width: 92%;
+  /* height: 95%; */
   margin: 2%;
 }
 
@@ -484,7 +476,7 @@ svg.wire path {
   font-size: 1.05rem;
   border-radius: 1em;
   padding: 0.6em 1.2em;
-  margin: 0px 10px;"
+  margin: 0px 10px;
 }
 
 .component-button{
@@ -604,4 +596,34 @@ svg.wire path {
 
 .bold-table{
   font-weight: bold;
+}
+
+/* Steps container (the <ul>) */
+ul#stack_list {
+  list-style-type: disc;
+  /* You can change 'disc' to 'circle', 'square', or 'none' */
+  padding-left: 20px;
+  text-align: left;
+
+  /* Enable vertical scrolling if the list exceeds its container’s height */
+  max-height: 100%;
+  overflow-y: auto;
+
+  /* Hide horizontal scrollbar (set to auto if you prefer a scrollbar) */
+  max-width: 100%;
+  overflow-x: auto;
+
+  /* Wrap long/unspaced text onto next line */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Individual list items (<li>) */
+ul#stack_list li {
+  margin-bottom: 10px;
+  /* Spacing between steps */
+  font-family: Arial, sans-serif;
+  text-align: left;
+  font-size: 16px;
 }
