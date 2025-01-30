@@ -1,4 +1,3 @@
-### Aim of the experiment
 
 The concept of a Turing Machine is central to the idea of generalised sequential computation. In the hierarchy of computational machines, we shall soon see that there are computational tasks that Pushdown Automata cannot perform but Turing machines can. Similar to DFA vs NFA, we shall first understand the notion of a Deterministic Turing Machine and then we shall see the non-deterministic version of the same.
 
