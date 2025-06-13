@@ -1,4 +1,4 @@
-## Operations on a Turing machine
+### Operations on a Turing machine
 
 - It starts in the initial state $q_0$ with the tape head positioned at the leftmost cell of the input.
 - It reads the symbol from the current tape cell.
