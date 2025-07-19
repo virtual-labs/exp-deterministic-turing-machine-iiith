@@ -1,7 +1,6 @@
-/****
-  * File containing DTM descriptions
-  *
-  */
+/**
+ * File containing DTM descriptions
+ */
 
 // DTM to accept strings of the form 0^n1^n
 const dtm1 = {
@@ -48,7 +47,7 @@ const dtm1 = {
       "states": [
         ["0011S", 0, "q0"],
         ["X011S", 1, "q1"],
-        ["0011S", 2, "q1"],
+        ["X011S", 2, "q1"],
         ["X0Y1S", 1, "q2"],
         ["X0Y1S", 0, "q2"],
         ["X0Y1S", 1, "q0"],
@@ -62,7 +61,7 @@ const dtm1 = {
       ]
     }
   ]
-}
+};
 
 const dtm2 = {
   "description": "Check if input is a palindrome.",
@@ -127,8 +126,10 @@ const dtm2 = {
         ["SSS1SSS", 3, "q5"],
         ["SSSSSSS", 2, "q6"],
         ["SSSSSSS", 3, "q0"]
-
       ]
     }
   ]
-}
+};
+
+// Array of all DTM machines
+const dtm = [dtm1, dtm2];
