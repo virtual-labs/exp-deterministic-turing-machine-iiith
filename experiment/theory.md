@@ -1,4 +1,4 @@
-#### Pre-requisites
+### Pre-requisites
 1. [Language acceptance by Deterministic Finite Automata](https://virtual-labs.github.io/exp-determinstic-finite-automaton-iiith/)
 2. [Non-determininistic Finite Automata (DFA)](https://virtual-labs.github.io/exp-non-determinstic-finite-automaton-iiith/)
 3. [Pushdown Automata (PDA)](https://virtual-labs.github.io/exp-pushdown-automaton-iiith/)
@@ -11,7 +11,7 @@ When you feed an input string into a PDA, it reads the symbols one by one and de
 
 In fact, through this section, we also gradually move away from automata, and languages, and into the domain of computability. 
 
-# How to make the Pushdown automata more powerful?
+### How to make the Pushdown automata more powerful?
 
 Before you read on, try thinking about this: Instead of one stack, you’ve now been given 2 stacks. With one stack you could only access the topmost element. With 2 stacks, you can effectively access any middle element. How much of a difference does it make? 
 
