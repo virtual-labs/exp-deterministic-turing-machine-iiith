@@ -1,0 +1,209 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the main difference between a Pushdown Automaton (PDA) and a Turing Machine?",
+      "answers": {
+        "a": "PDA has a stack while Turing Machine has a tape",
+        "b": "PDA is deterministic while Turing Machine is non-deterministic",
+        "c": "PDA can only read input while Turing Machine can read and write",
+        "d": "PDA has finite states while Turing Machine has infinite states"
+      },
+      "explanations": {
+        "a": "Correct: PDA uses a stack for memory while Turing Machine uses an infinite tape that can be read from and written to.",
+        "b": "Incorrect: Both can be deterministic or non-deterministic.",
+        "c": "Incorrect: While this is partially true, the main difference is the memory structure (stack vs tape).",
+        "d": "Incorrect: Both have finite sets of states."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the Church-Turing thesis state?",
+      "answers": {
+        "a": "All computers are equivalent to Turing machines",
+        "b": "Any computation that can be algorithmically performed can be computed by a Turing machine",
+        "c": "Turing machines are the fastest computational model",
+        "d": "All programming languages are Turing complete"
+      },
+      "explanations": {
+        "a": "Incorrect: This is too broad and not the precise statement of the thesis.",
+        "b": "Correct: The Church-Turing thesis states that any computation that can be algorithmically performed can be computed by a Turing machine or equivalent model.",
+        "c": "Incorrect: The thesis is about computational capability, not speed.",
+        "d": "Incorrect: Not all programming languages are Turing complete."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How many components are in the formal definition of a Turing Machine?",
+      "answers": {
+        "a": "5",
+        "b": "6",
+        "c": "7",
+        "d": "8"
+      },
+      "explanations": {
+        "a": "Incorrect: A Turing machine has more than 5 components.",
+        "b": "Incorrect: A Turing machine has more than 6 components.",
+        "c": "Correct: A Turing machine is formally defined as a 7-tuple (Q, Σ, Γ, δ, q₀, q_accept, q_reject).",
+        "d": "Incorrect: A Turing machine has exactly 7 components in its formal definition."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the symbol Γ (Gamma) represent in a Turing Machine?",
+      "answers": {
+        "a": "The input alphabet",
+        "b": "The tape alphabet",
+        "c": "The set of states",
+        "d": "The transition function"
+      },
+      "explanations": {
+        "a": "Incorrect: The input alphabet is represented by Σ (Sigma).",
+        "b": "Correct: Γ (Gamma) represents the tape alphabet, which includes the input alphabet and additional symbols.",
+        "c": "Incorrect: The set of states is represented by Q.",
+        "d": "Incorrect: The transition function is represented by δ (delta)."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the key characteristic of a Deterministic Turing Machine (DTM)?",
+      "answers": {
+        "a": "It has multiple tapes",
+        "b": "It can move in both directions on the tape",
+        "c": "For any state-symbol combination, there is exactly one possible transition",
+        "d": "It always halts"
+      },
+      "explanations": {
+        "a": "Incorrect: A basic DTM has one tape, though multi-tape variants exist.",
+        "b": "Incorrect: While DTMs can move in both directions, this is not the defining characteristic.",
+        "c": "Correct: In a DTM, for any given state and tape symbol, there is exactly one defined transition.",
+        "d": "Incorrect: DTMs may not always halt (halting problem)."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What does it mean for a system to be 'Turing complete'?",
+      "answers": {
+        "a": "It can solve any problem in polynomial time",
+        "b": "It has the computational power to simulate a Turing machine",
+        "c": "It can only solve decidable problems",
+        "d": "It is faster than a Turing machine"
+      },
+      "explanations": {
+        "a": "Incorrect: Turing completeness is about computational capability, not time complexity.",
+        "b": "Correct: Turing completeness means a system can simulate any Turing machine and perform any computation that is theoretically possible.",
+        "c": "Incorrect: Turing complete systems can attempt to solve undecidable problems (though they may not halt).",
+        "d": "Incorrect: Turing completeness is about capability, not speed."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the Halting Problem?",
+      "answers": {
+        "a": "A problem about when to stop a Turing machine manually",
+        "b": "A decidable problem that determines if a program will terminate",
+        "c": "An undecidable problem about whether a program will halt on given input",
+        "d": "A problem about optimizing program execution time"
+      },
+      "explanations": {
+        "a": "Incorrect: The Halting Problem is not about manual intervention.",
+        "b": "Incorrect: The Halting Problem is undecidable, not decidable.",
+        "c": "Correct: The Halting Problem asks whether a given program will halt on specific input, and it's proven to be undecidable.",
+        "d": "Incorrect: The Halting Problem is about termination, not optimization."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which class of languages can Turing Machines recognize?",
+      "answers": {
+        "a": "Regular languages only",
+        "b": "Context-free languages only",
+        "c": "Context-sensitive languages only",
+        "d": "Recursively enumerable languages"
+      },
+      "explanations": {
+        "a": "Incorrect: Turing machines can recognize more than just regular languages.",
+        "b": "Incorrect: Turing machines can recognize more than just context-free languages.",
+        "c": "Incorrect: Turing machines can recognize more than just context-sensitive languages.",
+        "d": "Correct: Turing machines can recognize the class of recursively enumerable languages, which is the most general class."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What happens when a Turing Machine reaches an accept state?",
+      "answers": {
+        "a": "It continues processing the input",
+        "b": "It rejects the input",
+        "c": "It accepts the input and halts",
+        "d": "It moves to the reject state"
+      },
+      "explanations": {
+        "a": "Incorrect: When a Turing machine reaches an accept state, it halts.",
+        "b": "Incorrect: Reaching an accept state means the input is accepted, not rejected.",
+        "c": "Correct: When a Turing machine reaches an accept state, it accepts the input and halts computation.",
+        "d": "Incorrect: Accept and reject states are mutually exclusive."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why are two stacks equivalent to a Turing machine tape?",
+      "answers": {
+        "a": "Two stacks provide more memory than one stack",
+        "b": "Two stacks allow access to any middle element by transferring between stacks",
+        "c": "Two stacks are faster than one tape",
+        "d": "Two stacks can store more symbols"
+      },
+      "explanations": {
+        "a": "Incorrect: It's not about the amount of memory but the access pattern.",
+        "b": "Correct: With two stacks, you can access any middle element by pouring elements from one stack to another, simulating random access like a tape.",
+        "c": "Incorrect: Speed is not the reason for equivalence.",
+        "d": "Incorrect: Storage capacity is not the key factor."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the transition function δ (delta) in a Turing Machine?",
+      "answers": {
+        "a": "A function that determines the initial state",
+        "b": "A function that maps current state and tape symbol to next state, write symbol, and head movement",
+        "c": "A function that determines if the input is accepted",
+        "d": "A function that counts the number of steps"
+      },
+      "explanations": {
+        "a": "Incorrect: The initial state is q₀, not determined by δ.",
+        "b": "Correct: The transition function δ maps (current state, tape symbol) to (next state, write symbol, head direction).",
+        "c": "Incorrect: Acceptance is determined by reaching accept states, not by δ directly.",
+        "d": "Incorrect: δ doesn't count steps, it defines transitions."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is computability in the context of Turing machines?",
+      "answers": {
+        "a": "The speed at which a Turing machine operates",
+        "b": "Whether a problem can be solved by following a finite sequence of well-defined steps",
+        "c": "The amount of memory a Turing machine uses",
+        "d": "The number of states in a Turing machine"
+      },
+      "explanations": {
+        "a": "Incorrect: Computability is not about speed but about the possibility of computation.",
+        "b": "Correct: Computability refers to whether a problem can be effectively computed by following algorithmic steps, as modeled by Turing machines.",
+        "c": "Incorrect: Computability is not about memory usage.",
+        "d": "Incorrect: Computability is not about the number of states."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
+  ]
+}
