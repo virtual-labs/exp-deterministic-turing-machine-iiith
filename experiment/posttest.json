@@ -2,38 +2,208 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "How does a Turing machine simulate algorithm execution?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "By converting algorithms to machine code",
+        "b": "By following well-defined steps symbol by symbol on the tape",
+        "c": "By using parallel processing",
+        "d": "By optimizing the algorithm first"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect: Turing machines don't convert to machine code, they work at a more abstract level.",
+        "b": "Correct: Turing machines execute algorithms by following step-by-step instructions, processing symbols on the tape according to transition rules.",
+        "c": "Incorrect: Basic Turing machines are sequential, not parallel.",
+        "d": "Incorrect: Turing machines execute algorithms as given, without optimization."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What is the significance of Turing machines in complexity theory?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "They help classify problems into complexity classes like P and NP",
+        "b": "They make all algorithms run faster",
+        "c": "They solve NP-complete problems efficiently",
+        "d": "They eliminate the need for complexity analysis"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct: Turing machines provide the foundation for complexity theory by helping classify problems based on the resources (time/space) needed to solve them.",
+        "b": "Incorrect: Turing machines don't make algorithms faster, they provide a theoretical framework.",
+        "c": "Incorrect: Turing machines don't solve NP-complete problems more efficiently.",
+        "d": "Incorrect: Turing machines are essential for complexity analysis, not for eliminating it."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In the formal definition δ: Q × Γ → Q × Γ × {L, R}, what does {L, R} represent?",
+      "answers": {
+        "a": "Left and Right states",
+        "b": "Load and Reset operations",
+        "c": "Left and Right tape head movements",
+        "d": "Lower and Raise tape positions"
+      },
+      "explanations": {
+        "a": "Incorrect: L and R don't represent states but directions.",
+        "b": "Incorrect: L and R don't represent load/reset operations.",
+        "c": "Correct: {L, R} represents the possible directions the tape head can move - Left or Right.",
+        "d": "Incorrect: L and R represent horizontal movement, not vertical positions."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What is the relationship between lambda calculus and Turing machines?",
+      "answers": {
+        "a": "Lambda calculus is more powerful than Turing machines",
+        "b": "They are computationally equivalent",
+        "c": "Turing machines are more powerful than lambda calculus",
+        "d": "They solve completely different types of problems"
+      },
+      "explanations": {
+        "a": "Incorrect: Lambda calculus is not more powerful than Turing machines.",
+        "b": "Correct: Lambda calculus and Turing machines are computationally equivalent - any computation possible in one can be performed in the other.",
+        "c": "Incorrect: Turing machines are not more powerful than lambda calculus.",
+        "d": "Incorrect: They can solve the same class of problems, just using different approaches."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Why can't a PDA recognize the language {aⁿbⁿcⁿ | n ≥ 1}?",
+      "answers": {
+        "a": "It doesn't have enough states",
+        "b": "It can only use one stack to keep track of counts",
+        "c": "It cannot read the input symbols",
+        "d": "It cannot handle three different symbols"
+      },
+      "explanations": {
+        "a": "Incorrect: The number of states is not the limiting factor.",
+        "b": "Correct: A PDA with one stack cannot simultaneously keep track of three different counts (a, b, and c) that must all be equal.",
+        "c": "Incorrect: PDAs can read input symbols.",
+        "d": "Incorrect: PDAs can handle multiple different symbols."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the practical significance of Turing completeness in programming languages?",
+      "answers": {
+        "a": "It makes programs run faster",
+        "b": "It means the language can theoretically compute anything that is computable",
+        "c": "It guarantees that all programs will halt",
+        "d": "It eliminates the need for debugging"
+      },
+      "explanations": {
+        "a": "Incorrect: Turing completeness doesn't affect execution speed.",
+        "b": "Correct: A Turing complete programming language can theoretically solve any problem that is algorithmically solvable.",
+        "c": "Incorrect: Turing completeness doesn't guarantee halting (halting problem is undecidable).",
+        "d": "Incorrect: Turing completeness doesn't eliminate bugs or the need for debugging."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How do Turing machines contribute to automata theory?",
+      "answers": {
+        "a": "They replace all other automata",
+        "b": "They help classify languages into complexity hierarchies",
+        "c": "They make other automata obsolete",
+        "d": "They only work with regular languages"
+      },
+      "explanations": {
+        "a": "Incorrect: Turing machines don't replace other automata, each has its purpose.",
+        "b": "Correct: Turing machines help classify languages into different levels of complexity (regular, context-free, context-sensitive, recursively enumerable).",
+        "c": "Incorrect: Other automata are still useful for specific purposes and simpler problems.",
+        "d": "Incorrect: Turing machines work with the most general class of languages, not just regular ones."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the role of Turing machines in algorithm development?",
+      "answers": {
+        "a": "They automatically optimize algorithms",
+        "b": "They help analyze algorithm correctness and complexity",
+        "c": "They convert algorithms to machine code",
+        "d": "They debug algorithms automatically"
+      },
+      "explanations": {
+        "a": "Incorrect: Turing machines don't automatically optimize algorithms.",
+        "b": "Correct: Turing machines provide a framework for analyzing algorithm correctness, time complexity, and space complexity.",
+        "c": "Incorrect: Turing machines work at a theoretical level, not machine code generation.",
+        "d": "Incorrect: Turing machines don't automatically debug algorithms."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What makes the Halting Problem undecidable?",
+      "answers": {
+        "a": "It requires infinite time to solve",
+        "b": "No algorithm can determine for all programs whether they will halt",
+        "c": "It needs too much memory",
+        "d": "It involves non-deterministic choices"
+      },
+      "explanations": {
+        "a": "Incorrect: The issue is not about time but about the impossibility of a general solution.",
+        "b": "Correct: The Halting Problem is undecidable because no general algorithm exists that can determine for any arbitrary program and input whether the program will halt.",
+        "c": "Incorrect: Memory requirements are not the issue with undecidability.",
+        "d": "Incorrect: The Halting Problem applies to deterministic programs as well."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "How do multi-tape Turing machines relate to single-tape Turing machines?",
+      "answers": {
+        "a": "Multi-tape machines are more powerful",
+        "b": "They have equivalent computational power but different efficiency",
+        "c": "Single-tape machines are more powerful",
+        "d": "They solve completely different problems"
+      },
+      "explanations": {
+        "a": "Incorrect: Multi-tape machines are not more powerful in terms of what they can compute.",
+        "b": "Correct: Multi-tape and single-tape Turing machines have equivalent computational power, but multi-tape machines can be more efficient for certain algorithms.",
+        "c": "Incorrect: Single-tape machines are not more powerful than multi-tape machines.",
+        "d": "Incorrect: They can solve the same class of problems."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the significance of Turing machines in cybersecurity?",
+      "answers": {
+        "a": "They directly encrypt data",
+        "b": "They help assess the computational complexity of cryptographic algorithms",
+        "c": "They prevent all cyber attacks",
+        "d": "They automatically detect malware"
+      },
+      "explanations": {
+        "a": "Incorrect: Turing machines don't directly encrypt data, they provide theoretical foundations.",
+        "b": "Correct: Turing machines help analyze the computational complexity of cryptographic algorithms, which is crucial for assessing their security strength.",
+        "c": "Incorrect: Turing machines don't prevent cyber attacks directly.",
+        "d": "Incorrect: Turing machines don't automatically detect malware."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the fundamental limitation that makes some problems unsolvable even by Turing machines?",
+      "answers": {
+        "a": "Limited memory capacity",
+        "b": "Slow processing speed",
+        "c": "The inherent logical structure of certain problems makes them undecidable",
+        "d": "Insufficient programming languages"
+      },
+      "explanations": {
+        "a": "Incorrect: Turing machines have infinite tape, so memory is not the limitation.",
+        "b": "Incorrect: Processing speed is not the fundamental limitation for undecidable problems.",
+        "c": "Correct: Some problems are undecidable due to their inherent logical structure, not due to computational limitations.",
+        "d": "Incorrect: Programming language limitations are not the fundamental issue."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
     }
   ]
 }

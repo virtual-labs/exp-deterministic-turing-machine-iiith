@@ -1,1 +1,1 @@
-## Experiment name
+## Acceptance by Deterministic Turing Machine
